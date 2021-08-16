@@ -1,0 +1,165 @@
+.hero{
+    height: 100vh;
+    min-height: 100vh;
+}
+.hero-front{
+    display: flex;
+    align-items: center;
+}
+.hero-details{
+    flex: 0 0 55%;
+    color: white;
+    max-width: 55%;
+}
+.hero-details h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.hero-details p{
+    margin-bottom: 18px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.5;
+}
+.hero-form{
+    padding: 40px;
+    background: #fff;
+    border-radius: 7px;
+    width: 460px;
+}
+.hero-form h3{
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+.hero-form input{
+    box-sizing: border-box;
+    width: 100%;
+    height: calc(4em + 1px);
+    margin: 0 0 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    background: #fff;
+    resize: none;
+    outline: none;
+    font-size: 15px;
+}
+.hero-form input:focus{
+    border-color: #7971ea;
+}
+.hero-form button{
+    cursor: pointer;
+    color: white;
+    background-color: #7971ea;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 36px;
+    font-size: 1.4rem;
+    margin-top: 12px;
+    transition: background .3s linear;
+}
+.hero-form button:hover{
+    background-color: #3a2ee0;
+}
+.hero-button{
+    position: absolute;
+}
+.hero-details a{
+    text-decoration: none;
+    color: white;
+    background-color: #7971ea;
+    border-radius: 20px;
+    padding: 12px 36px;
+    font-size: 1.4rem;
+    transition: background .3s linear;
+}
+.hero-details a:hover{
+    background-color: #3a2ee0;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #343a40;
+    opacity: 0.9;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 30%;
+}
+@media screen and (min-width:1200px){
+    .container{
+        max-width: 1140px;
+    }
+}
+@media screen and (max-width:974px){
+    .hero{
+        height: 130vh;
+        min-height: 130vh;
+    }
+    .hero::before{
+        height: 130%;
+    }
+}
+@media screen and (max-width:1199px){
+    .container{
+        max-width: 1000px;
+    }
+    .hero-details h1{
+        font-size: 2rem;
+    }
+    .hero-details p{
+        font-size: 15px;
+    }
+}
+ @media screen and (max-width:974px){
+    .container{
+        max-width: 768px;
+        top: 20%;
+    }
+    .hero-front{
+        flex-direction: column;
+    }
+    .hero-details{
+        top: 160px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 100px;
+    }
+    .hero-details h1{
+        font-size: 2.5rem;
+    }
+    .hero-details p{
+        font-size: 18px;
+    }
+    .hero-form{
+        width: auto;
+    }
+}
+
+@media screen and (max-width:575px){
+    .container{
+        max-width: 540px;
+    }
+    .hero-details h1{
+        font-size: 1.6rem;
+    }
+    .hero-details p{
+        font-size: 12px;
+    }
+    .hero-form h3{
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+    .hero-form button{
+        margin-top: 8px;
+        font-size: 1.2rem;
+    }
+    .hero-form input{
+        font-size: 12px;
+    }
+}

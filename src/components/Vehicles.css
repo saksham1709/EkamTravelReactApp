@@ -1,0 +1,117 @@
+.hero-5{
+    height: 60vh;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+.hero-5::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background-color: #343a40;
+    opacity: 0.8;
+}
+.heading{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.heading h1{
+    color: white;
+    font-size: 2.5rem;
+}
+.V-container{
+    background-color: #343a40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.V-container a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    border: none;
+    text-align: center;
+    padding: 20px 75px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    background: #7971ea;
+    transition: all .3s linear;
+}
+.V-container a:hover{
+    background: #3a2ee0;
+}
+.TC{
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+}
+.vehicle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px 30px 15px;
+}
+.vehicle-details{
+    flex: 0 0 60%;
+    color: white;
+    font-size: 1.15rem;
+    line-height: 2;
+    font-weight: 100;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    /* border: 1px solid white; */
+    background: none;
+}
+  
+.imp{
+    color: #fe1919;
+    font-size: 15px;
+    font-weight: 100;
+}
+.imp1{
+    color: #fe1919;
+    font-size: 15px;
+    font-weight: 100;
+    padding-right: 10px;
+}
+.box{
+    float: left;
+}
+td, th {
+    border: 1px solid #7971ea;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width:968px) {
+    td,th{
+        padding: 6px 12px;
+    }    
+}
+
+@media screen and (max-width:768px) {
+    .vehicle{
+        flex-direction: column;
+    }
+    .vehicle-rates{
+        width: 80%;
+        margin-top: 2.5rem;
+    }
+}
+
+@media screen and (max-width:476px) {
+    .vehicle-details{
+        font-size: 15px;
+    }
+    td,th{
+        font-size: 14px;
+        padding: 5px;
+    }
+}

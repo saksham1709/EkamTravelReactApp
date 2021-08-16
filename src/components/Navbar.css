@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    outline: none;
+}
+nav{
+    width: -webkit-fill-available;
+    /* background-color: black; */
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    margin-bottom: 0px;
+    z-index: 1999;
+    position: absolute;
+}
+.navbar{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    display: flex;
+}
+.nav-name{
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: inline-block;
+}
+.nav-name a{
+    text-decoration: none;
+    color: white;
+}
+.nav-toggle{
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    color: white;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    transition: color .3s linear;
+}
+.nav-toggle:hover{
+    color: #7971ea;
+}
+.nav-links{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    align-self: center;
+}
+.link-list{
+    display: flex;
+}
+.link-list li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1.2rem;
+}
+.link-list li a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 5px 20px;
+    transition: color .3s linear;
+}
+.link-list li a:hover{
+    color: #688ce8;
+}
+.nav-links .link-button{
+    display: none;
+    width: 100%;
+    border: 1px solid white;
+    padding: 18px 0px 18px 0px;
+}
+.nav-links .list-button{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+}
+.nav-links .link-button{
+    transition:  background-color .4s , color .4s , border .4s;
+}
+.nav-button{
+    text-align: right;
+    align-self: center;
+    position: relative;
+}
+.nav-button a{
+    text-decoration: none;
+    color: white;
+    background-color:#7971ea;
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-size: 1.3rem;
+    transition: background .3s linear;
+}
+.nav-button a:hover{
+    background-color: #3a2ee0;
+}
+
+@media screen and (max-width:975px){
+    .nav-name{
+        padding-left: 0rem;
+    }
+    .nav-toggle{
+        display: block;
+    }
+    .nav-links{
+        position: inherit;
+    }
+    .link-list{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 113px;
+        left: -200vw;
+        background-color: #151c28;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: all 0.5s;
+    }
+    .link-list.active{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 113px;
+        left: 0vw;
+        background-color: #151c28;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: all 0.5s;
+    }
+    .link-list li a{
+        /* color: white; */
+        color: #cfd6e3;
+    }
+    .link-list li a:hover{
+        color: #688ce8;
+    }
+    .nav-links .link-button:hover{
+        background-color: #7971ea;
+        border: none;
+        color: white;
+    }
+    .nav-links .link-button{
+        display: inline-block;
+    }
+    .nav-button{
+        display: none;
+    }
+}
+@media screen and (max-width:975px){
+    .navbar{
+        padding-left: 3rem;
+        padding-right: 4rem;
+    }
+}
+@media screen and (max-width:575px){
+    .navbar{
+        padding-left: 2rem;
+        padding-right: 4rem;
+    }
+}
+
+
+
+
+/* #343a40 */

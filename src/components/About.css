@@ -1,0 +1,135 @@
+.hero-4{
+    height: 200vh;
+    min-height: 200vh;
+}
+.hero-4::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 207%;
+    background-color: #343a40;
+    opacity: 0.9;
+}
+.A-container{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10%;
+}
+.A-container h1{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.about-front{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+.about-details{
+    flex: 0 0 100%;
+    width: 70%;
+    padding: 20px;
+    color: white;
+    line-height: 2;
+}
+.about-details h2{
+    color: #cfd6e3;
+    font-size: 2rem;
+}
+.about-slider{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+ .about-slider{
+    flex: 0 0 100%;
+    width: 100%;
+    position: relative;
+    height: 500px;
+    padding: 30px 0px 30px 0px;
+}
+.vslider{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px 30px 10px;
+}
+.vslider-preview{
+    margin: 0px 10px 4px 10px;
+    width: auto;
+    height: auto;
+    background:transparent;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px -1px rgb(0 0 0 / 30%);
+    overflow: hidden;
+}
+.V-card-pic-wrap{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.V-card-pic-wrap::after {
+    content: attr(data-category);
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    padding: 6px 16px;
+    max-width: calc((100%) - 60px);
+    font-size: 16px;
+    font-weight: 100;
+    color: #fff;
+    background-color: #7971ea;
+    box-sizing: border-box;
+  }
+.vslider-img{
+    transition: all .3s linear;
+}
+.vslider-img:hover{
+    transform: scale(1.1);
+}
+.vslider-preview a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    padding: 12px 26px;
+    border-radius: 20px;
+    background: #7971ea;
+    transition: all .3s linear;
+}
+.vslider-preview a:hover{
+    background-color: #3a2ee0;
+} 
+@media screen and (max-width:1080px){
+    .about-details{
+        width: 100%;
+    }
+}
+@media screen and (min-width:609px) and (max-width:896px){
+    .S-card-pic-wrap{
+        height: 250px;
+    }
+} 
+@media screen and (max-width:608px){
+    .hero-4{
+        height: 230vh;
+        min-height: 230vh;
+    }
+    .hero-4::before{
+        height: 237%;
+    }
+    .about-details{
+        line-height: 1.5;
+    }
+    .about-details h2{
+        font-size: 1.6rem;
+    }
+}
